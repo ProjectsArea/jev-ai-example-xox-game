@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Human vs Jev</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>Human <span>VS</span> Jev</h1>
+
+        <p class="subtitle">
+            Tic-Tac-Toe powered by TypeSafe Jev
+        </p>
+
+    </header>
+
+
+    <div class="game-layout">
+
+        <!-- GAME -->
+
+        <section class="game-panel">
+
+            <div class="players">
+
+                <div class="player human">
+
+                    <div class="player-icon">
+                        ❌
+                    </div>
+
+                    <div>
+                        <strong>You</strong>
+                        <small>Player X</small>
+                    </div>
+
+                </div>
+
+
+                <div class="vs">
+                    VS
+                </div>
+
+
+                <div class="player ai">
+
+                    <div class="player-icon">
+                        🤖
+                    </div>
+
+                    <div>
+                        <strong>Jev</strong>
+                        <small>Player O</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="status"
+                class="status"
+            >
+                Your turn — choose a cell
+            </div>
+
+
+            <div
+                id="board"
+                class="board"
+            >
+
+                <button data-index="0"></button>
+                <button data-index="1"></button>
+                <button data-index="2"></button>
+
+                <button data-index="3"></button>
+                <button data-index="4"></button>
+                <button data-index="5"></button>
+
+                <button data-index="6"></button>
+                <button data-index="7"></button>
+                <button data-index="8"></button>
+
+            </div>
+
+
+            <button
+                id="newGame"
+                class="new-game"
+            >
+                New Game
+            </button>
+
+        </section>
+
+
+        <!-- JEV PANEL -->
+
+        <section class="jev-panel">
+
+            <div class="panel-title">
+
+                <span>🤖</span>
+
+                <div>
+
+                    <strong>Jev Decision</strong>
+
+                    <small>
+                        TypeSafe System One
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="decision"
+                class="decision"
+            >
+
+                <p class="empty">
+                    Jev will make a decision
+                    after your move.
+                </p>
+
+            </div>
+
+
+            <div class="info">
+
+                <div>
+
+                    <span>Model</span>
+
+                    <strong>
+                        jev-latest
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>Decision Type</span>
+
+                    <strong>
+                        Choice
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+
+        <span>
+            Human = X
+        </span>
+
+        <span>
+            Jev = O
+        </span>
+
+        <span>
+            Decisions powered by TypeSafe
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>
